@@ -3,15 +3,19 @@
 <br/>
 <br/>
 
-With [The Weather Forecasting](https://the-weather-forecasting.netlify.app) user can search locations by city name and observe the weather for the next 5-6 days and 3 hour interval.
+With [The Weather Forecasting](https://ziontutorial.com/) user can search locations by city name and observe the weather for the next 5-6 days and 3 hour interval.
+
+The user of [The Weather Forecasting](https://ziontutorial.com/) tool can look for destinations by city name and view the weather forecast for the next three hours, five to six days out.
+The app is created with material-UI and React.js.
+
 <br />
-The app is developed using React.js and material-UI.
+The app is developed using React.js.
 
 <br/>
 
 ## 💻 Live Demo:
 
-https://the-weather-forecasting.netlify.app
+https://ziontutorial.com/
 
 <br/>
 
@@ -19,8 +23,6 @@ https://the-weather-forecasting.netlify.app
 
 - Make sure you already have `Node.js` and `npm` installed in your system.
 - You need an API key from [OpenWeatherMap](https://openweathermap.org/). After creating an account, [grab your key](https://home.openweathermap.org/api_keys).
-- Then, under the `src` directory, go to `api/OpenWeatherService` and replace `WEATHER_API_KEY` with your OpenWeatherMap API Key.
-  - **`api/OpenWeatherService.js`**: It contains the code related to the back-end of the application.
 
 <br/>
 
@@ -28,7 +30,7 @@ https://the-weather-forecasting.netlify.app
 
 - Clone the repository:
 
-	@@ -26,14 +35,18 @@ git clone https://github.com/Amin-Awinti/the-weather-forecasting.git
+ @@ git clone https://github.com/Amin-Awinti/the-weather-forecasting.git
 
 - Install the packages using the command `npm install`
 
@@ -37,18 +39,11 @@ https://the-weather-forecasting.netlify.app
 ## 📙 Used libraries
 
 - `react-js`
-- `material-ui`
 
 Check `packages.json` for details
 
 <br/>
 
-## 📄 Todos
-
-- [ ] Styled-components
-- [ ] Convert the entire project to TypeScript
-	@@ -43,4 +56,4 @@ Check `packages.json` for details
-- [ ] Dark/Light Mode
 
 <br/>
 Thank You ☺
