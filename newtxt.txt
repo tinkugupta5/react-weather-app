@@ -1,0 +1,92 @@
+import React, { useState } from 'react';
+import './style.css';
+
+function Sidebar() {
+  const [isOpen, setIsOpen] = useState(true);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+      <div className="logo-details">
+        <i className='bx bxs-alarm-snooze'></i>
+        <div className="logo_name">ziontutorial</div>
+        <i className="bx bx-menu" id="btn" onClick={toggleSidebar}></i>
+      </div>
+      <ul className="nav-list">
+        <li>
+          <i className="bx bx-search"></i>
+          <input type="text" placeholder="Search..." />
+          <span className="tooltip">Search</span>
+        </li>
+        
+        <li>
+          <a href="#">
+            <i className="bx bx-grid-alt"></i>
+            <span className="links_name">Dashboard</span>
+          </a>
+          <span className="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="#">
+            <i className="bx bx-user"></i>
+            <span className="links_name">User</span>
+          </a>
+          <span className="tooltip">User</span>
+        </li>
+        <li>
+          <a href="#">
+            <i className="bx bx-pie-chart-alt-2"></i>
+            <span className="links_name">Analytics</span>
+          </a>
+          <span className="tooltip">Analytics</span>
+        </li>
+        <li>
+          <a href="#">
+            <i className="bx bx-folder"></i>
+            <span className="links_name">File Manager</span>
+          </a>
+          <span className="tooltip">Files</span>
+        </li>
+        <li>
+          <a href="#">
+            <i className="bx bx-cog"></i>
+            <span className="links_name">Setting</span>
+          </a>
+          <span className="tooltip">Setting</span>
+        </li>
+        <li className="profile">
+          <div className="profile-details">
+            <img src="Icon.png" alt="profileImg" />
+            <div className="name_job">
+              <div className="name">Koray Okumus</div>
+              <div className="job">Web designer</div>
+            </div>
+          </div>
+          <i className="bx bx-log-out" id="log_out"></i>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function HomeSection() {
+  return (
+    <section className="home-section">
+      <div className="text">Dashboard</div>
+    </section>
+  );
+}
+
+function App() {
+  return (
+    <>
+      <Sidebar />
+      <HomeSection />
+    </>
+  );
+}
+
+export default App;
