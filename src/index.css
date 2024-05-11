@@ -6,13 +6,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  /* background: #0059FF; */
 }
 
 .container {
   background: #EDF0F6;
   background: linear-gradient(354deg, #137DF5 0%, #14B1F8 100%);
-  /* padding: 30px 120px; */
   width: 320px;
   height: 600px;
   position: absolute;
@@ -110,3 +108,5 @@ button:active {
 {
   margin-top: 3rem;
 }
+
+
