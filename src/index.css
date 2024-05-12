@@ -6,10 +6,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  
 }
 
 .container {
-  background: #EDF0F6;
+  background: #000000;
   background: linear-gradient(354deg, #137DF5 0%, #14B1F8 100%);
   width: 320px;
   height: 600px;
