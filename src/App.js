@@ -87,6 +87,7 @@ function App() {
                 {weatherData.weather[0].main}
                 <span className="degree_icon"></span>
               </h2>
+              
               <form className="form" onSubmit={handleSubmit}>
                 <input
                   type="text"
