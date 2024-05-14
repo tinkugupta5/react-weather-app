@@ -23,12 +23,13 @@ function App() {
   const day = currentDate.getDate();
   const year = currentDate.getFullYear();
   const formattedDate = `${month} ${day}, ${year}`;
-  const API_KEY = "bcda10ba323e88e96cb486015a104d1d"; 
+  const API_KEY = "bcda10ba323e88e96cb486015a104d1d";
 
   const fetchWeatherData = async () => {
     try {
       const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+        
       );
       const data = await response.json();
       console.log(data);
@@ -42,10 +43,11 @@ function App() {
     fetchWeatherData();
   }, []);
 
-  const handleInputChange = (event) => {
-    setCity(event.target.value);
-  };
-
+    const handleInputChange = (event) => {
+      console.log(event.target.value);
+      setCity(event.target.value);
+    };
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     fetchWeatherData();
@@ -78,16 +80,13 @@ function App() {
               {/* <img className="container_img" src="/thunder.png" width="180px" alt="sss"/> */}
               <img
                 className="container_img"
-                src={getWeatherIconUrl(weatherData.weather[0] .main)}
+                src={getWeatherIconUrl(weatherData.weather[0].main)}
                 width="180px"
                 alt="Weather Icon"
               />
               <h2 className="container_degree">{weatherData.main.temp}</h2>
-              <h2 className="country_per">
-                {weatherData.weather[0].main}
-                <span className="degree_icon"></span>
-              </h2>
-              
+              <h2 className="country_per">  {weatherData.weather[0].main} </h2>
+
               <form className="form" onSubmit={handleSubmit}>
                 <input
                   type="text"
@@ -103,7 +102,7 @@ function App() {
           </>
         )}
       </div>
-      
+
     </div>
   );
 }
