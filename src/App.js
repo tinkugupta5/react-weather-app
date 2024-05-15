@@ -96,7 +96,7 @@ function App() {
                   onChange={handleInputChange}
                   required
                 />
-                <button type="submit">Get</button>
+                <button type="submit">Search</button>
               </form>
             </div>
           </>
