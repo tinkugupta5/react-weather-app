@@ -64,7 +64,6 @@ function App() {
         return "/Tornado.png"; // Path to your snowy weather icon
       case "Haze":
         return "/sun.png"; // Path to your haze weather icon
-      // Add more cases for other weather conditions as needed
       default:
         return null;
     }
