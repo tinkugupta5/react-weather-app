@@ -44,9 +44,9 @@ function App() {
     fetchWeatherData();
   }, []);
 
-    const handleInputChange = (event) => {
-      console.log(event.target.value);
-      setCity(event.target.value);
+  const handleInputChange = (event) => {
+    console.log(event.target.value);
+    setCity(event.target.value);
     };
   
   const handleSubmit = (event) => {
@@ -57,13 +57,13 @@ function App() {
   const getWeatherIconUrl = (main) => {
     switch (main) {
       case "Clouds":
-        return "/thunder.png"; // Path to your sunny weather icon
+        return "/thunder.png"; 
       case "Rain":
-        return "/rain_with_cloud.png"; // Path to your rainy weather icon
+        return "/rain_with_cloud.png"; 
       case "Mist":
-        return "/Tornado.png"; // Path to your snowy weather icon
-      case "Haze":
-        return "/sun.png"; // Path to your haze weather icon
+        return "/Tornado.png"; 
+      case "Haze":  
+        return "/sun.png"; 
       default:
         return null;
     }
@@ -73,7 +73,7 @@ function App() {
     <div className="App">
       <div className="container">
         {weatherData && (
-          <>
+          <>            
             <h1 className="container_date">{formattedDate}</h1>
             <div className="weather_data">
               <h2 className="container_city">{weatherData.name}</h2>
